@@ -18,7 +18,22 @@ First Proyect Formal Languages & Compilers
 - DFA-Analyzer, Built by: Santiago Idarraga Ceballos: (https://github.com/0721santi/DFAAnalyzer)
 
 ## Detailed instructions for execution:
-- TBD
+- Clone the github repository:
+```bash
+git clone https://github.com/0721santi/FirstProyectFormalLanguagesAndCompilers.git
+```
+- Run the program:
+```bash
+go run main.go
+```
+
+- Write your string once you see the `>` symbol: 
+i.e.
+```bash
+go run main.go
+    > 110
+```
+The program will return if the string was accepted or not by the DFA.
 
 ## Empty string (sigma) representation:
 - The empty string (sigma) has been represented as the captial letter E (U+0045 unicode, 69 ASCII)

@@ -21,11 +21,16 @@ func main() {
 	dfa.AddTransitionFunc(q2, q1, []string{"0"})
 	dfa.AddTransitionFunc(q2, q2, []string{"1"})
 	var str string
+	fmt.Print("> ")
 	fmt.Scanln(&str)
-	accepted := dfa.AnalizeChain(str)
-	if accepted {
+	if str == "E" {
 		fmt.Printf("The DFA accepts the string %s\n", str)
 	} else {
-		fmt.Printf("The DFA rejects the string %s\n", str)
+		accepted := dfa.AnalizeChain(str)
+		if accepted {
+			fmt.Printf("The DFA accepts the string %s\n", str)
+		} else {
+			fmt.Printf("The DFA rejects the string %s\n", str)
+		}
 	}
 }
