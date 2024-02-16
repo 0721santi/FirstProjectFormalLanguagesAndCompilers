@@ -33,7 +33,7 @@ i.e.
 go run main.go
     > 110
 ```
-The program will return if the string was accepted or not by the DFA.
+The program will return if the string was accepted or not by the DFA and end its execution.
 
 ## Empty string (sigma) representation:
 - The empty string (sigma) has been represented as the captial letter E (U+0045 unicode, 69 ASCII)
